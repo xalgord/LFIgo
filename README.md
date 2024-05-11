@@ -1,6 +1,5 @@
 > A faster LFI Fuzzer tool.
 
-
 ## Installation
 
 ```bash
@@ -16,5 +15,5 @@ cat urls.txt | LFIgo
 or
 
 ```
-LFIgo --file urls.txt --threads 25
+LFIgo --file urls.txt --threads 15
 ```
