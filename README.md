@@ -29,3 +29,6 @@ or
 ```
 LFIgo --file urls.txt --threads 15
 ```
+
+
+> ⚠️ This tool may pose security risks. It's recommended to use with caution and additional security measures.
