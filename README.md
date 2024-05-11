@@ -1,4 +1,4 @@
-> A faster LFI Fuzzer tool.
+> **LFIgo**: LFIGo is a lightweight and efficient tool designed for detecting and exploiting Local File Inclusion (LFI) vulnerabilities in web applications. With its streamlined approach, LFIScanGo offers rapid scanning and targeted exploitation capabilities, making it an essential tool for security researchers and penetration testers.
 
 ## Installation
 
