@@ -151,8 +151,11 @@ func testURL(url string) (bool, string, string) {
 				if resp.StatusCode == http.StatusOK {
 					scanner := bufio.NewScanner(resp.Body)
 					for scanner.Scan() {
+						// Check for a typical LFI file content indicator like "root:x"
 						if strings.Contains(scanner.Text(), "root:x") {
-							return true, param, payload
+							// Return full payload path for accurate output
+							fullPayload := fmt.Sprintf("%s/etc/passwd", payload)
+							return true, param, fullPayload
 						}
 					}
 				}
